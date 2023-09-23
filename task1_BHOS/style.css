@@ -1,0 +1,46 @@
+body {
+    background-image: url('./assets/background.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     
+}
+
+h1{
+    color: aliceblue;
+    margin-left: 50%;
+    margin-top: 10%;
+    
+
+}
+
+div select{
+    width: 120px;
+    height: 120px;
+
+    
+    margin-left: 40%;
+}
+
+div input{
+    width: 50px;
+    
+}
+
+form{
+    margin-left: 45%;
+    padding-top: 10%;
+}
+
+.radio{
+    margin-top: 10px;
+}
+.radio + label{
+    color: white;
+}
+
+.number{
+    margin-left: 2%;
+    
+}
