@@ -11,17 +11,17 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static('public'))
 app.set('view engine','ejs')
 
-// const fetchData= async()=>{
-//     try{const response= await axios.get('https://api.publicapis.org/entries')
-//     const jsonData=JSON.stringify(response.data);
-//     fs.promises.writeFile('data.json',jsonData,(err)=>{
-//         if (err) console.log(err);
-//     })} catch(err){
-//         console.log(err);
-//     }
+const fetchData= async()=>{
+     try{const response= await axios.get('https://api.publicapis.org/entries')
+     const jsonData=JSON.stringify(response.data);
+     fs.promises.writeFile('data.json',jsonData,(err)=>{
+        if (err) console.log(err);
+    })} catch(err){
+        console.log(err);
+     }
 
-// }
-// fetchData();
+ }
+fetchData();
 
 const data=require('./data.json');
 const selected=data.entries.slice(0,200);
