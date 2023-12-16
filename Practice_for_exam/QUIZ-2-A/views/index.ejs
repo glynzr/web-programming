@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Welcome to the API lister</h1>
+    <%if(api.length===0){%>
+        <h2>There is no API</h2>
+    <%}else{%>
+        <%api.forEach(element=>{%>
+            <h2><%= element.API%></h2>
+            <ul>
+                <li>Description: <%= element.Description%> </li>
+                <%if(element.Auth===''){%>
+                    <li>Auth: ---</li>
+                <%}else{%>
+                    <li>Auth: <%= element.Auth%> </li>
+                <%}%>
+                
+                <li>Link: <%= element.Link%> </li>
+                <li>Category: <%= element.Category%> </li>
+            </ul>
+
+        <%})%>
+    <%}%>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+/* h1{
+   text-align: center;
+} */
+
+/* style.css */
+
+/* Body and Heading Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #444;
+}
+
+/* API List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Styling individual API elements */
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+ul {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Styling Auth information */
+li:nth-child(3) {
+    font-style: italic;
+    color: #777;
+}
+
+/* Link styles */
+li:nth-child(4) {
+    color: #007bff;
+}
+
+/* Category styles */
+li:nth-child(5) {
+    font-weight: bold;
+}

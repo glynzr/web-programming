@@ -1,0 +1,9 @@
+1.	From given URL get API data and write into JSON file. (https://api.publicapis.org/entries)
+2.	Read JSON file and push the first 200 records into array or object.
+3.	Display array (or object) using Express JS (hbs templating).
+4.	For displaying final data use skeleton or bootstrap frameworks and display only:
+                a.	API
+                b.	Description
+                c.	Auth
+                d.	Link
+                e.	Category
