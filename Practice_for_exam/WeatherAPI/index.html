@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div><h1>Weather API</h1>
+    <button id="location_button">Get my location</button>
+    </div>
+    <h2 id="error"></h2>
+    
+    <div id="table">
+        <table>
+            <tr>
+                <th><h3>Parameters</h3></th>
+                <th><h3>Values</h3></th>
+            </tr>
+            <tr>
+                <td><h4>Longitude</h4></td>
+                <td id="lon"></td>
+            </tr>
+            <tr>
+                <td><h4>Latitude</h4></td>
+                <td id="lat"></td>
+            </tr>
+            <tr>
+                <td><h4>Timezone</h4></td>
+                <td id="timezone"></td>
+            </tr>
+            <tr>
+                <td><h4>Temperature</h4></td>
+                <td id="temp"></td>
+            </tr>
+            <tr>
+                <td><h4>Humidity</h4></td>
+                <td id="humidity"></td>
+            </tr>
+            <tr>
+                <td><h4>Weather description</h4></td>
+                <td id="weather"></td>
+            </tr>
+            <tr>
+                <td><h4>Weather icon </h4></td>
+                <td><img id="icon"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

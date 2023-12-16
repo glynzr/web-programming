@@ -1,0 +1,2 @@
+-Take real time location
+-According to location collect and display data about current weather

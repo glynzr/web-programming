@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    text-align: center;
+}
+
+
+button{
+    width: 100px;
+    height: 30px;
+}
+
+h1{
+    border-bottom: 1px solid black;
+}
+
+#table{
+    margin-left: 35%;
+}
+table,th,td{
+    border: 1px solid black;
+}
+
+th,td{
+    width: 150px;
+}
