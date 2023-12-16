@@ -1,0 +1,1 @@
+Here I have used API that lists hot and iced coffee types.

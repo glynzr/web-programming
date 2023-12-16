@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot coffee</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/partial') %>
+    <h2>Hot cofee</h2>
+    <%if(hot.length===0){%>
+        <h2>No hot coffee</h2>
+    <%}else{%>
+        <%hot.forEach(element=>{%>
+            <ul>
+                <h3><%=element.id%>.<%=element.title%></h3>
+                
+                <li><span>Description:</span><%=element.description%></li>
+                <li><span>Ingredients:</span><%=element.ingredients%></li>
+                <li><span>Image:</span> <img src="<%=element.image%>" alt=""></li>
+                </ul>
+        <%})%>
+    <%}%>
+</body>
+</html>

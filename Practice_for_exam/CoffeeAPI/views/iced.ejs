@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iced coffee</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/partial') %>
+    <h2>Iced cofee</h2>
+    <%if(iced.length===0){%>
+        <h2>No iced coffee</h2>
+    <%}else{%>
+       
+        <%iced.forEach(element=>{%>
+            <ul>
+                <h3><%=element.id%>.<%=element.title%></h3>
+                
+                <li><span>Description:</span><%=element.description%></li>
+                <li><span>Ingredients:</span><%=element.ingredients%></li>
+                <li><span>Image:</span> <img src="<%=element.image%>" alt=""></li>
+                </ul>
+        <%})%>
+    <%}%>
+</body>
+</html>
