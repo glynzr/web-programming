@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Products</h1>
+    <div>
+        
+        <form action="/" method="post">
+            <table>
+                <tr>
+                    <td>Products</td>
+                    <td>
+                        <select name="products">
+                            <option  value="product">Products</option>
+                            <option value="jacket">Jacket</option>
+                            <option value="coat">Coat</option>
+                            <option value="boots">Boots</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="quantity">Quantity</td><td><input type="number" min="1" max="20" name="quantity" id="input"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Result</button></td>
+                    <td><p><%=result%></p></td>
+                </tr>
+        
+            
+            
+            </table>
+        </form>
+
+    </div>
+</body>
+</html>
