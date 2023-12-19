@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Products</h1>
+    <form action="/" method="post">
+        <table id="main">
+            <tr class="main">
+                <td><input type="radio" name="watch" value="watch"><label for="watch">Watch(120$)</label></td>
+                <td><input  id="number" type="number" name="watch_quantity" min="0" max="20" placeholder="Quantity"></td>
+            </tr>
+            <tr class="main">
+                <td><input type="radio" name="belt" value="belt"><label for="belt">Belt(15$)</label></td>
+                <td><input id="number" type="number" name="belt_quantity" min="0" max="20" placeholder="Quantity"></td>
+            </tr>
+            <tr class="main">
+                <td> <input type="radio" name="jacket" value="jacket"><label for="jacket">Jacket(75$)</label></td>
+                <td><input id="number" type="number" name="jacket_quantity" min="0" max="20" placeholder="Quantity"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><button type="submit" name="submit">Result</button></td>
+                <td><%=result%></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

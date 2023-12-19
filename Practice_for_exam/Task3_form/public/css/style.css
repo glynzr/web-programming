@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+#number{
+    width: 70px;
+}
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.main, .main td{
+    border: 1px solid black;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
