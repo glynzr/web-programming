@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
