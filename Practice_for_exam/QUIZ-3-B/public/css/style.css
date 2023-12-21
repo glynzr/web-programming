@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+#error{
+    color: red;
+}
+
+#success{
+    color: green;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#add{
+    margin-top: 50px;
+    
+}
+
+#home{
+    width: 100px;
+    height: 30px;
+}
+
+#no{
+    text-align: center;
+    color: chocolate;
+}
+
+#detail{
+    text-align: center;
+}
+
+
+#division{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-item,.grid-item td, .grid-item td{
+    border: 1px solid black;
+}

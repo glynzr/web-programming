@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Regions</h1>
+    <div>
+        <form action="/regions" method="post">
+            <button type="submit" id="back">Back to insert page</button>
+        </form>
+    </div>
+    
+    <h4 id="success"><%=message%></h4>
+    <table>
+        <%regions.forEach(region=>{%>
+            <tr>
+                <td><a href="/regions/<%=region%>" ><%=region%></a></td>
+            </tr>
+            
+        <%})%>
+    </table>
+</body>
+</html>

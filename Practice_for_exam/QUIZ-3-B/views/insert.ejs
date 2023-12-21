@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Simple App</h1>
+    <%if(messages.length!==0){%>
+        <%messages.forEach(message=>{%>
+            <h4 id="error"><%=message%></h4>
+        <%})%>
+    <%}%>
+    <form action="/" method="post">
+        <table>
+            <tr>
+                <td><label for="division_name">Division name</label></td>
+                <td><input type="text" name="division_name" placeholder="enter division name"></td>
+            </tr>
+            <tr>
+                <td><label for="azerbaijani_name">Azerbaijani name</label></td>
+                <td> <input type="text" name="azerbaijani_name" placeholder="enter azerbaijani name"></td>
+            </tr>
+            <tr>
+                <td><label for="capital">Capital</label></td>
+                <td><input type="text" name="capital" placeholder="enter capital name"></td>
+            </tr>
+            <tr>
+                <td><label for="area">Area</label></td>
+                <td><input type="number" name="area" placeholder="enter area"></td>
+            </tr>
+            <tr>
+                <td><label for="population">Population</label></td>
+                <td><input type="number" name="population" placeholder="enter population"></td>
+            </tr>
+
+            <tr>
+                <td><label for="region">Region</label></td>
+                <td><input type="text" name="region" placeholder="enter region name"></td>
+            </tr>
+            <tr>
+                <td><label for="notes">Notes</label></td>
+                <td><textarea name="notes"></textarea></td>
+            </tr>
+        </table>
+        <div>
+            <button type="submit" id="add">Add division</button>
+        </div>
+        
+    </form>
+</body>
+</html>

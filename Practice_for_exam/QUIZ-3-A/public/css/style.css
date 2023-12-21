@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+
+table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border: 1px solid black;
+}
+
+h2{
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#back{
+    width: 150px;
+    height: 30px;
+}
+
+h4{
+    text-align: center;
+    color: red;
+}
+
+
+#success{
+    color: green;
+}

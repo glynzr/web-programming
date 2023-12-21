@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <form action="/:name" method="post">
+        <button type="submit" id="home">Home</button>
+    </form>
+    
+    <h1>Data about <%=name%></h1>
+    <h4 id="success"><%=message%></h4>
+    
+    
+    <%if(details.count===0){%>
+        <h4 id="no">There is no division</h4>
+   <% }else{%>
+        <table>
+            <tr>
+                <td>Number of divisions</td>
+                <td><%=details.count%></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Divisions list:</td>
+                <td><%=details.division_names%></td>
+            </tr>
+        </table >
+        <br>
+        <h4 id="detail">Division details</h4>
+        <%details.divisions.forEach(el=>{%>
+            <div class="grid">
+                <table class="grid-item" >
+                    <tr>
+                        <td>Division id</td>
+                        <td><%=el.division_id%></td>
+                    </tr>
+                    <tr>
+                        <td>Division name</td>
+                        <td><%=el.division_name%></td>
+                    </tr>
+                    <tr>
+                        <td>Azerbaijani name</td>
+                        <td><%=el.azerbaijani_name%></td>
+                    </tr>
+                    <tr>
+                        <td>Capital</td>
+                        <%if(el.capital){%>
+                            <td><%=el.capital%></td>
+                        <%}else{%>
+                            <td>---</td>
+                        <%}%>
+                    </tr>
+                    <tr>
+                        <td>Area</td>
+                        <td><%=el.area%></td>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td><%=el.population%></td>
+                    </tr>
+                    <tr>
+                        <td>Notes</td>
+                        <%if(el.notes){%>
+                            <td><%=el.notes%></td>
+                        <%}else{%>
+                            <td>---</td>
+                        <%}%>
+                    </tr>
+                </table>
+            </div>
+            
+            <br>
+        <%})%>
+    <%}%>
+</body>
+</html>

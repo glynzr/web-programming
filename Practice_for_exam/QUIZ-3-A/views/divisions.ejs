@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisions</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1><%=region%></h1>
+    <div>
+        <form action="/regions/:name" method="post">
+            <button type="submit" value="back" id="back">Back</button>
+        </form>
+    </div>
+    
+
+    <%if(divisions.length===0){%>
+        <h2>No division</h2>
+    <%}else{%>
+        <%divisions.forEach(div=>{%>
+            <h2>Division id <%=div.division_id%> </h2>
+            <table>
+                <tr>
+                    <td>Division name</td>
+                    <td><%=div.division_name%></td>
+                </tr>
+                <tr>
+                    <td>Azerbaijani name</td>
+                    <td><%=div.azerbaijani_name%></td>
+                </tr>
+                <tr>
+                    <td>Capital</td>
+                    <%if(div.capital){%>
+                        <td><%=div.capital%></td>
+                    <%}else{%>
+                        <td>----</td>
+                    <%}%>
+                </tr>
+                <tr>
+                    <td>Area</td>
+                    <td><%=div.area%></td>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td><%=div.population%></td>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <%if(div.notes){%>
+                        <td><%=div.notes%></td>
+                    <%}else{%>
+                        <td>---</td>
+                    <%}%>
+                </tr>
+            </table>
+        <%})%>
+    <%}%>
+</body>
+</html>
